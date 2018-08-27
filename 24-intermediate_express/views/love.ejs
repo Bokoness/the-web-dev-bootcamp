@@ -1,0 +1,15 @@
+<!--including the header partial ejs file in /views/partials-->
+<% include partials/header %>
+
+<h1>This is EJS file</h1>
+<h3>5 + 5 = <%=5+5%></h3>
+<h3>You fell in love with <b><u><%= thingVar %></u></b></h3>
+
+<% if(thingVar.toLowerCase() === 'rusty') { %>
+    <p>Good choice! rusty is the best</p>  
+<% } else { %>
+    <p>Bad choice</p>
+<% } %>
+
+<!--including the footer partial ejs file in /views/partials-->
+<% include partials/footer %>
