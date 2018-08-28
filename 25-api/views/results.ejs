@@ -1,0 +1,21 @@
+<head>
+    <style>
+        wrapper {
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<div class="wrapper">
+    <h1>Results</h1>
+    
+    <% data["Search"].forEach((movie) => { %>
+        <div>
+            <h3>
+                <b><%= movie["Title"] %></b> - <%= movie["Year"] %>
+            </h3>
+            <img src=<%=movie["Poster"]%> /> 
+        </div>
+    <% }) %>
+    
+    <br/><a href="/">Go back to seach</a>
+</div>
