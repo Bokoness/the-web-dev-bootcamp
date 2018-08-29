@@ -1,0 +1,23 @@
+* mongo - opens the mongodb shell (like mysql cli)
+
+* help - list of basoc features in mongo
+
+* show dbs - showing the databases (like show databases in mysql)
+
+* use <database name> - creating a new database if its doesnt exists. and if it is - using that database
+* show collections - showing the collection (tables) in database
+
+* insert - inserting data into a collection in database. 
+    - for example: db.dogs.insert({name:"rusty", breed:"Mutt"})
+    
+* find - finds data in collection.
+    - for example: db.dogs.find() - finds all data in collection
+    - for example: db.dogs.find({name: rusty}); - will locate the dogs with name=rusty
+    
+* update - updates data.
+    - for example: db.dogs.update({name: rusty}, {breed: "bonny"}) - updates rusy so all her data will be {breed: "bonny"}
+    - for exmaple: db.dogs.update({name: rusty}, {$set: {breed:"bonny"}})
+        updates only the breed to rusty, do not deletes data
+        
+* remove - removes data
+    - for exmaple: db.dogs.remove({breed: rusty})
