@@ -5,7 +5,8 @@
 
 let mongoose = require("mongoose");
 //connect mogoose to database  "mongodb://localhost/<name of database>"
-mongoose.connect("mongodb://localhost/cat_app");
+//mongoose.connect("mongodb://localhost/cat_app");
+mongoose.connect('mongodb://localhost:27017/studies'); //connect to Mongo on PC
 
 // CREATING A SCHEMA
 let catSchema = new mongoose.Schema({

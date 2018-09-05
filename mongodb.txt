@@ -1,0 +1,29 @@
+===========
+||MongoDB||
+===========
+
+download mongoDB                 
+    https://fastdl.mongodb.org/win32/mongodb-win32-x86_64-2008plus-ssl-3.4.9-signed.msi
+
+install mongoDB
+    -complete installation
+
+setup mongodb
+    - open a folder for mongo data
+    - go to mongodb folder and execute mongod.exe file with the path to the folder, like that:
+    - C:\Program Files\MongoDB\Server\4.0\bin> mongod.exe --dbpath c:\Users\Bokon\dev\mongo-data 
+
+to work with mongodb
+    - go to mongodb folder / bin execute mongo.exe file
+    - from there input mongo db commands
+
+robomongo
+    - a gui for mongodb
+    - download : https://download.robomongo.org/1.1.1/windows/robo3t-1.1.1-windows-x86_64-c93c6b0.exe
+
+connect to DB with nodejs
+    - use module node-mongodb-native
+    - npm install mongodb --save //to connect it with nodejs
+
+rules
+    - mongodb dont need to create new record, just connect to a record and add data, and it will be created for you
