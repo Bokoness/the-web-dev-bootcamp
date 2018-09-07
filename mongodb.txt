@@ -11,7 +11,8 @@ install mongoDB
 setup mongodb
     - open a folder for mongo data
     - go to mongodb folder and execute mongod.exe file with the path to the folder, like that:
-    - C:\Program Files\MongoDB\Server\4.0\bin> mongod.exe --dbpath c:\Users\Bokon\dev\mongo-data 
+    - cd \Program Files\MongoDB\Server\4.0\bin 
+    - mongod.exe --dbpath c:\Users\Bokon\dev\mongo-data 
 
 to work with mongodb
     - go to mongodb folder / bin execute mongo.exe file

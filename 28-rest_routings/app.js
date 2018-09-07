@@ -39,6 +39,7 @@ app.get("/blogs", (req, res) => {
     });
 });
 
-app.listen(process.env.PORT, process.env.IP, () => {
-    console.log("Server is running");
-});
+app.listen(3000, () => console.log('Restfull App is running'))
+// app.listen(process.env.PORT, process.env.IP, () => {
+//     console.log("Server is running");
+// });
